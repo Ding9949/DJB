@@ -1,0 +1,3 @@
+---- gExCom.rx_ok 搜索到 2处, 2文件 ----
+excom_task in api_excom.c (E:\BIGPROJECT\大加弹导纱系统单节板\STCom_V241221\User\app) : 	gExCom.rx_ok ++;
+_DisCom_s in api_excom.h (E:\BIGPROJECT\大加弹导纱系统单节板\STCom_V241221\User\app) : 	u32 rx_ok;

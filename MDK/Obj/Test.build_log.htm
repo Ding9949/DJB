@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Administrator,  , LIC=IK1BF-6QCN1-45CT5-GHMG8-Y8SHJ-YJF6Z
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.29.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.36.0
+Dialog DLL:      TCM.DLL V1.36.5.0
+ 
+<h2>Project:</h2>
+E:\BIGPROJECT\大加弹导纱系统单节板\STCom_V241221\MDK\Test.uvprojx
+Project File Date:  12/21/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Test'
+compiling sys_hard.c...
+compiling gd32f30x_it.c...
+compiling main.c...
+compiling sys_task.c...
+compiling sys_main.c...
+compiling sys_par.c...
+..\User\app\sys_par.c(83): warning:  #940-D: missing return statement at end of non-void function "api_save_sys_par_rt" 
+  }
+..\User\app\sys_par.c: 1 warning, 0 errors
+compiling LedDis.c...
+compiling api_canbus.c...
+..\User\app\api_canbus.c(196): warning:  #550-D: variable "ID"  was set but never used
+  	u32 ID = 0;
+..\User\app\api_canbus.c(199): warning:  #177-D: variable "tmp"  was declared but never referenced
+  	u8 tmp = 0;
+..\User\app\api_canbus.c(200): warning:  #177-D: variable "tmp1"  was declared but never referenced
+  	u8 tmp1= 0;
+..\User\app\api_canbus.c: 3 warnings, 0 errors
+compiling api_excom.c...
+..\User\app\api_excom.c(678): warning:  #177-D: function "_send_intervl"  was declared but never referenced
+  static u8 _send_intervl(u8 *dp)
+..\User\app\api_excom.c: 1 warning, 0 errors
+compiling drv_eprom.c...
+linking...
+Program Size: Code=18176 RO-data=1624 RW-data=64 ZI-data=3544  
+FromELF: creating hex file...
+".\Obj\Test.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: GigaDevice
+                https://gd32mcu.com/data/documents/pack/GigaDevice.GD32F30x_DFP.2.2.1.pack
+                GigaDevice.GD32F30x_DFP.2.2.1
+                GigaDevice GD32F30x Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Test
+  C:\Users\Administrator\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>

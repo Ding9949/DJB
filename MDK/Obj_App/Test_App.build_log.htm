@@ -1,0 +1,69 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 wuych, 1, LIC=MGXG8-3WFWZ-24TSS-LV94U-7FG8I-AEI52
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+E:\0-KLHZRD\CODE1\KLSTCF\STCom_v1xx\MDK\Test.uvprojx
+Project File Date:  12/19/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Test_App'
+compiling main.c...
+..\User\main.c(53): warning:  #223-D: function "iap_get_mark" declared implicitly
+  	iap_get_mark();	
+..\User\main.c(54): error:  #20: identifier "IapMarkInfo" is undefined
+  	IapMarkInfo.AppVer = CODE_VER;
+..\User\main.c(56): warning:  #223-D: function "iap_save_mark" declared implicitly
+  	iap_save_mark();
+..\User\main.c: 2 warnings, 1 error
+compiling sys_main.c...
+..\User\app\sys_main.c(123): error:  #165: too few arguments in function call
+  	led_flash();
+..\User\app\sys_main.c(202): error:  #65: expected a ";"
+  	PWM_TIMER_EN(); 
+..\User\app\sys_main.c: 0 warnings, 2 errors
+compiling api_canbus.c...
+..\User\app\api_canbus.c(194): warning:  #550-D: variable "ID"  was set but never used
+  	u32 ID = 0;
+..\User\app\api_canbus.c(197): warning:  #177-D: variable "tmp"  was declared but never referenced
+  	u8 tmp = 0;
+..\User\app\api_canbus.c(198): warning:  #177-D: variable "tmp1"  was declared but never referenced
+  	u8 tmp1= 0;
+..\User\app\api_canbus.c: 3 warnings, 0 errors
+".\Obj_App\Test_App.axf" - 3 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: GigaDevice
+                https://gd32mcu.com/data/documents/pack/GigaDevice.GD32F30x_DFP.2.2.1.pack
+                GigaDevice.GD32F30x_DFP.2.2.1
+                GigaDevice GD32F30x Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\wuych\AppData\Local\Arm\Packs\GigaDevice\GD32F30x_DFP\2.2.1\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
